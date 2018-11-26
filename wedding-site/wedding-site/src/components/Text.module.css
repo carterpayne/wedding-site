@@ -1,0 +1,19 @@
+.Text {
+  font-family: 'Libre Baskerville';
+  color: #BB8463;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.medium {
+  font-size: 32px;
+}
+
+.large {
+  font-size: 62px;
+}
+
+.small {
+  font-size: 16px;
+}
+

@@ -3,7 +3,7 @@ import React, { ReactChild } from 'react';
 import styles from './Section.module.css';
 
 interface SectionProps {
-  children: ReactChild
+  children: ReactChild | ReactChild[]
 }
 
 const Section = ({ children }: SectionProps) => (

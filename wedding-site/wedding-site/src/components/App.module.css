@@ -3,7 +3,7 @@
   margin: 0;
   background-image: url('../assets/background.png');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: #FEF9ED;
   background-position: center;
   background-attachment: fixed;
