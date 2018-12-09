@@ -7,8 +7,10 @@ class App extends Component {
   render() {
     return (
       <div className={styles.App}>
+        <TitleNavSection />
         <Container>
-          <TitleNavSection />
+          <div>
+          </div>
         </Container>
       </div>
     );
