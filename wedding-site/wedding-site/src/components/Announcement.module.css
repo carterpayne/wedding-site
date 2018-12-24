@@ -1,0 +1,21 @@
+.Announcement {
+  height: calc(60% - 48px);
+  margin: 5% 20px 0px;
+}
+
+.image {
+  margin: 0px auto;
+  display: block;
+  height: auto;
+}
+
+.names {
+  composes: image;
+  width: 100%;
+}
+
+.date {
+  composes: image;
+  margin-top: 65px;
+  width: 60%;
+}

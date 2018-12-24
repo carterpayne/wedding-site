@@ -1,5 +1,6 @@
 .Container {
-  max-width: 1440px;
+  height: calc(100vh - 48px);
+  max-width: 916px;
   margin: auto;
-  padding: 48px;
+  padding-top: 24px;
 }
