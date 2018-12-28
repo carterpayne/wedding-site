@@ -4,12 +4,12 @@ import styles from './Nav.module.css';
 import Text from './Text';
 
 const navItems = [
-  { label: 'Home', link: '/' },
-  { label: 'Accommodations', link: 'accommodations' },
-  { label: 'Directions', link: 'directions' },
-  { label: 'Registry', link: 'registry' },
-  { label: 'Wedding Activities', link: 'activities' },
-  { label: 'Things To Do', link: 'thingstodo' },
+  { label: 'Home', link: '/', exact: true },
+  { label: 'Accommodations', link: '/accommodations' },
+  { label: 'Directions', link: '/directions' },
+  { label: 'Registry', link: '/registry' },
+  { label: 'Wedding Activities', link: '/activities' },
+  { label: 'Things To Do', link: '/thingstodo' },
 ];
 
 const Nav = () => (
@@ -19,6 +19,7 @@ const Nav = () => (
         <li key={i.label} className={styles.item}>
         <NavLink
           to={i.link}
+          exact={i.exact}
           className={styles.link}
           activeClassName={styles.activeLink}
         >

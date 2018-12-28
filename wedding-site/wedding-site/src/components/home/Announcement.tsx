@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Announcement.module.css';
 
-import names from '../assets/names.png';
-import date from '../assets/date.png';
-import place from '../assets/place.png';
+import names from '../../assets/names.png';
+import date from '../../assets/date.png';
+import place from '../../assets/place.png';
 
 const Announcement = () => (
   <div className={styles.Announcement}>
