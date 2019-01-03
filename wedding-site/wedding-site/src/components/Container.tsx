@@ -8,7 +8,9 @@ interface ContainerProps {
 
 const Container = ({ children }: ContainerProps) => (
   <div className={styles.Container}>
-    {children}
+    <div className={styles.content}>
+      {children}
+    </div>
   </div>
 );
 

@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { ReactChild } from 'react';
+import styles from './ExtraAccommodations.module.css';
 
-const ExtraAccommodation = ({ children }: { children: ReactChild[] }) => {
+interface ExtraAccommodationProps {
+  link: string
+  name: string
+  details: string
+}
+
+const ExtraAccommodation = ({ link, name, details }: ExtraAccommodationProps) => {
   return (
-    <div>{children}</div>
+    <li className={styles.item}>
+      <a href={link} className={styles.link}>{name}</a>
+      <span>- {details}</span>
+    </li>
   );
 };
 

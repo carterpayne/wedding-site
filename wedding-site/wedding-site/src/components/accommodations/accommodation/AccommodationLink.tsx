@@ -1,10 +1,15 @@
 import React from 'react';
 import styles from './Accommodation.module.css';
 
-const AccommodationLink = ({ url, children }) => {
+interface AccommodationLinkProps {
+  url: string
+  children: string
+}
+
+const AccommodationLink = ({ children, url }: AccommodationLinkProps) => {
   return (
-    <div className={styles.link}>
-      <span className={styles.linkLabel}>Website: </span>
+    <div className={styles.AccommodationLink}>
+      <span className={styles.linkLabel}>More Info:</span>
       <a href={url}>{children}</a>
     </div>
   );

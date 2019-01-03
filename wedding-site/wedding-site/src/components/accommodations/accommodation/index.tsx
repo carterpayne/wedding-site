@@ -1,7 +1,11 @@
-import React from 'react';
-import styles from 'Accommodation.module.css';
+import React, { ReactChild } from 'react';
+import styles from './Accommodation.module.css';
 
-const Accommodation = ({ children }: ReactChild[]) => {
+interface AccommodationProps {
+  children: ReactChild[]
+}
+
+const Accommodation = ({ children }: AccommodationProps) => {
   return (
     <div className={styles.Accommodation}>
       {children}

@@ -5,28 +5,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  font-size: 16px;
+}
+
+@media(max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+
 .medium {
-  font-size: 3.6vmin;
+  font-size: 2rem;
 }
 
 .large {
-  font-size: 5.2vmin;
+  font-size: 3rem;
 }
 
 .small {
-  font-size: 2vmin;
-}
-
-.mediumFixed {
-  font-size: 32px;
-}
-
-.largeFixed {
-  font-size: 42px;
-}
-
-.smallFixed {
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .fancy {

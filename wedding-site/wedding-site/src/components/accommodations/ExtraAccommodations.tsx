@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { ReactChild } from 'react';
 
-const ExtraAccommodations = ({ children }) => {
+interface ExtraAccommodationsProps {
+  children: ReactChild[]
+}
+
+const ExtraAccommodations = ({ children }: ExtraAccommodationsProps) => {
   return (
-    <div>{children}</div>
+    <ul>{children}</ul>
   );
 };
 

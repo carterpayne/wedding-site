@@ -7,9 +7,9 @@ const navItems = [
   { label: 'Home', link: '/', exact: true },
   { label: 'Accommodations', link: '/accommodations' },
   { label: 'Directions', link: '/directions' },
-  { label: 'Registry', link: '/registry' },
-  { label: 'Wedding Activities', link: '/activities' },
-  { label: 'Things To Do', link: '/thingstodo' },
+  //{ label: 'Registry', link: '/registry' },
+  //{ label: 'Wedding Activities', link: '/activities' },
+  //{ label: 'Things To Do', link: '/thingstodo' },
 ];
 
 const Nav = () => (
@@ -23,7 +23,7 @@ const Nav = () => (
           className={styles.link}
           activeClassName={styles.activeLink}
         >
-            <Text size="small" fancy fixed>{i.label}</Text>
+            <Text size="small" fancy>{i.label}</Text>
           </NavLink>
         </li>
       ))}

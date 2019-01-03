@@ -1,6 +1,6 @@
 .Announcement {
-  height: calc(60% - 48px);
-  margin: 5% 20px 0px;
+  margin: 16px;
+  height: calc(60% - 32px);
 }
 
 .image {
@@ -16,12 +16,15 @@
 
 .date {
   composes: image;
-  margin-top: 45px;
   width: 35%;
 }
 
 .place {
   composes: image;
-  margin-top: 45px;
   width: 60%;
 }
+
+.image + .image {
+  margin-top: 16px;
+}
+

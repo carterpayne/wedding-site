@@ -1,10 +1,14 @@
 import React from 'react';
 import styles from './Accommodation.module.css';
 
-const AccommodationPhone = ({ number }) => {
+interface AccommodationPhoneProps {
+  number: string
+}
+
+const AccommodationPhone = ({ number }: AccommodationPhoneProps) => {
   return (
     <a className={styles.phone} href={`tel:${number}`}>
-      ({number.splice(0, 3)}) {number.splice(3, 3)}-{number.splice(6, 4)}
+      ({number.slice(0, 3)}) {number.slice(3, 6)}-{number.slice(6)}
     </a>
   );
 };

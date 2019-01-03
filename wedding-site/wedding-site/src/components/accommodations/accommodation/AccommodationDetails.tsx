@@ -1,9 +1,13 @@
-import React from 'react';
-import styles from 'Accommodation.module.css';
+import React, { ReactChild } from 'react';
+import styles from './Accommodation.module.css';
 
-const AccommodationDetails = ({ children }: ReactChild) => {
+interface AccommodationDetailsProps {
+  children: (string | ReactChild)[]
+}
+
+const AccommodationDetails = ({ children }: AccommodationDetailsProps) => {
   return (
-    <div className={styles.accommodationDetails}>
+    <div className={styles.AccommodationDetails}>
       {children}
     </div>
   );

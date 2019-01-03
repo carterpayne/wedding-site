@@ -1,0 +1,13 @@
+.Accommodation {
+  padding: 24px 0;
+}
+.AccommodationDetails {
+  padding: 8px 0;
+  text-align: justify;
+}
+.AccommodationLink {}
+.linkLabel {
+  padding-right: 8px;
+}
+.AccommodationPhone {}
+.AccommodationTitle {}
