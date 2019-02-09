@@ -1,8 +1,17 @@
 language: node_js
 node_js:
-  - "node"
-
+- node
 jobs:
   include:
-    - stage: compile
-      script: "npm run build"
+  - stage: compile
+    script: npm run build
+deploy:
+  provider: s3
+  access_key_id: AKIAICUEFE2QU3AX2PRQ
+  secret_access_key:
+    secure: UYDkB+6S9IEx1XYrwAbk46mfolI52IYw81ba2ltyweMwapUof8PO/mNyF4Vx1dTeUaeuFDAxR1O1J/MyzaKZW5tgAIwq4PWMiJ1ITWi+PL+Sub2nG0F4tLsl1cfoFLaJuDwmGtdtGxeErXreLEBqcyF0Pea7a90nG92I4g/78LY0kF3NCnNa0HHoafXJeE4YG9DqxgjLVRQuA91Nbf9hY+4wSWjVrB6MgqInW3RqhvAlFlMjDDC5ruOlriX+qG6zF85uyFu1zfAJ4+P6fVJrqU4+aFjNZhRVX6yAowSq+oj5DgFQyLJfAXhAQYv+nKLtnuU0gTKM8QlQUHV30N/RGCvJAAxYy2nJ51oQWfn11iOhMuHRM7rV0mIlIQwNtlNqAdTGL6vAYwkXBgsLj8rNUFIHdfJ70/2zCBOPcEO6sPd/C/wOXDhzmUFo8Uq3VvZignVLohFL6/zsM7UE802RSUcHvJRDurXgC1lfehtxa/MK5J4gAbll3RMd3MqAiVwKRLMG635Tfhxp9yJMzxaqqbrIoWRk5v7KbqINunJ4eXtOGaZbQXWw8a8bjaTODX1+XQP0Lo18QL352MTzown3ZUVYMCTuJ6WmwBNFRx2WkFy1+/MNQXCo2++zQCo1eyNV13hykvaGSdUSt/SsbbzdRNHjAMAhgtDIJCIBaGnAXVs=
+  bucket: preview.carrieandcarter.com
+  local-dir: build
+  acl: public_read
+  on:
+    branch: dev
