@@ -13,5 +13,6 @@ deploy:
   bucket: preview.carrieandcarter.com
   local-dir: build
   acl: public_read
+  skip_cleanup: true
   on:
     branch: dev
