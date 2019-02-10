@@ -1,6 +1,9 @@
+@value colors: '../colors.module.css';
+@value text from colors;
+
 .Text {
   font-family: 'Cormorant Garamond', serif;
-  color: #BB8463;
+  color:text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

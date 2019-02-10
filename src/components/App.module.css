@@ -1,3 +1,6 @@
+@value colors: '../colors.module.css';
+@value background from colors;
+
 .App {
   height: 100vh;
   display: flex;
@@ -5,6 +8,6 @@
 }
 
 body {
-  background-color: #FEF9ED;
+  background-color: background;
 }
 
