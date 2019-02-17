@@ -56,7 +56,7 @@
 
 .listDropdown .item {
   margin: none;
-  padding: 18px 0;
+  padding: 8px 0;
 }
 
 .listDropdown .item:hover {
@@ -65,10 +65,16 @@
 
 .link {
   text-decoration: none;
+  display: block;
 }
 
 .activeLink {
   border-bottom: 1px solid active;
+}
+
+.listDropdown .link {
+  height: 32px;
+  line-height: 32px;
 }
 
 .listDropdown .activeLink {
@@ -76,6 +82,7 @@
   border-left: 3px solid active;
   padding: 0 8px;
 }
+
 
 .hamburger {
   cursor: pointer;

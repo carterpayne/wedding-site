@@ -1,0 +1,26 @@
+@value largeSide: 355px;
+@value smallSide: 200px;
+
+.Photos {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Photo {
+  border: 8px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: smallSide;
+  height: largeSide;
+  margin: 8px;
+}
+
+.Photo.landscape {
+  width: largeSide;
+  height: smallSide;
+}
+

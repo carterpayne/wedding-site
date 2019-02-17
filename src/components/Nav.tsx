@@ -11,6 +11,7 @@ const navItems = [
   { label: 'Home', link: '/', exact: true },
   { label: 'Accommodations', link: '/accommodations' },
   { label: 'Directions', link: '/directions' },
+  { label: 'Photos', link: '/photos' },
   //{ label: 'Registry', link: '/registry' },
   //{ label: 'Wedding Activities', link: '/activities' },
   //{ label: 'Things To Do', link: '/thingstodo' },
@@ -54,6 +55,8 @@ const Nav = () => {
             exit: styles.listDropdownExit,
           }}
           timeout={200}
+          mountOnEnter
+          unmountOnExit
         >
           <ul className={listClassNames}>
           {navItems.map(i => (
