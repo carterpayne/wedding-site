@@ -3,7 +3,6 @@ import PageTitle from '../PageTitle';
 import Photo from './Photo';
 import styles from './photos.module.css';
 
-import seventies from '../../assets/photos/70s.jpg';
 import accadiaMt from '../../assets/photos/accadia_mt.jpg';
 import accadiaShore from '../../assets/photos/accadia_shore.jpg';
 import acl from '../../assets/photos/acl.jpg';
@@ -32,7 +31,6 @@ const Photos = () => {
       <div className={styles.container}>
         <Photo src={acl} width={355} height={274} />
         <Photo src={proposal} />
-        <Photo src={seventies} />
         <Photo src={utGame} />
         <Photo src={scotland} height={218} />
         <Photo src={rubyKisses}  width={355} height={274}/>
