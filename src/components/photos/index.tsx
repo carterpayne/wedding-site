@@ -30,27 +30,27 @@ const Photos = () => {
     <div className={styles.Photos}>
       <PageTitle>Photos</PageTitle>
       <div className={styles.container}>
-        <Photo src={acl} landscape />
+        <Photo src={acl} width={355} height={274} />
         <Photo src={proposal} />
         <Photo src={seventies} />
         <Photo src={utGame} />
-        <Photo src={scotland} />
-        <Photo src={rubyKisses} landscape />
-        <Photo src={rangersGame} />
+        <Photo src={scotland} height={218} />
+        <Photo src={rubyKisses}  width={355} height={274}/>
+        <Photo src={rangersGame} height={204} />
         <Photo src={christmakah} />
-        <Photo src={mayraWedding} />
+        <Photo src={mayraWedding} height={289} />
         <Photo src={joeTs} />
-        <Photo src={jeffHaleyRehDin} />
-        <Photo src={kilt} />
+        <Photo src={jeffHaleyRehDin} height={203} />
+        <Photo src={kilt} height={218} />
         <Photo src={newport} />
         <Photo src={accadiaMt} />
-        <Photo src={accadiaShore} landscape />
-        <Photo src={campMessHall} />
+        <Photo src={accadiaShore} width={355} height={274} />
+        <Photo src={campMessHall} height={322} />
         <Photo src={familyPhoto} />
         <Photo src={rubyPuppy} />
-        <Photo src={campGym} />
+        <Photo src={campGym} height={203} />
         <Photo src={melAlexWedding} />
-        <Photo src={camp} landscape />
+        <Photo src={camp} width={355} height={274} />
       </div>
     </div>
   );
