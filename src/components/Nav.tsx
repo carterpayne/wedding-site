@@ -6,13 +6,17 @@ import styles from './Nav.module.css';
 import Text from './Text';
 import { ReactComponent as Hamburger } from '../assets/hamburger.svg';
 import useMaxWindowWidth from '../hooks/useMaxWindowWidth';
+import { ZOLA_LINK, WILLIAMS_SONOMA_LINK } from '../constants/registry';
 
 const navItems = [
   { label: 'Home', link: '/', exact: true },
   { label: 'Accommodations', link: '/accommodations' },
   { label: 'Directions', link: '/directions' },
+  { label: 'Registry', link: '/registry', subnav: [
+    { label: 'Zola', link: ZOLA_LINK },
+    { label: 'Williams Sonoma', link: WILLIAMS_SONOMA_LINK },
+  ] },
   { label: 'Photos', link: '/photos' },
-  //{ label: 'Registry', link: '/registry' },
   //{ label: 'Wedding Activities', link: '/activities' },
   //{ label: 'Things To Do', link: '/thingstodo' },
 ];
@@ -69,6 +73,15 @@ const Nav = () => {
               >
                 <Text size="small" fancy>{i.label}</Text>
               </NavLink>
+              {i.subnav && (
+                <ul className={styles.subitems}>
+                  {i.subnav.map(s => (
+                    <li className={styles.subitem}>
+                      <a className={styles.sublink} key={s.label} href={s.link}><Text size="small" fancy>{s.label}</Text></a>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </li>
           ))}
           </ul>
