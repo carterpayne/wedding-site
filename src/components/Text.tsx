@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react'
 import styles from './Text.module.css'
 
 interface TextProps {
-  size?: "small" | "medium" | "large"
+  size?: "small" | "medium" | "large" | "smedium"
   fancy?: boolean
   children: ReactNode
 }

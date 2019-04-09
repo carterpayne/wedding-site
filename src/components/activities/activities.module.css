@@ -1,0 +1,15 @@
+@value colors: '../../colors.module.css';
+@value active from colors;
+
+.Activities {
+  width: 100%;
+}
+
+.Section {
+  padding: 8px;
+}
+
+.sectionHeader {
+  padding: 4px 0;
+}
+
