@@ -9,7 +9,6 @@ import Accommodations from './accommodations';
 import Directions from './directions';
 import Registry from './registry';
 import Activities from './activities';
-import Things from './things';
 import Photos from './photos';
 
 class App extends Component {
@@ -24,7 +23,6 @@ class App extends Component {
             <Route path="/directions" component={Directions} />
             <Route path="/registry" component={Registry} />
             <Route path="/activities" component={Activities} />
-            <Route path="/thingstodo" component={Things} />
             <Route path="/photos" component={Photos} />
           </Container>
         </div>
