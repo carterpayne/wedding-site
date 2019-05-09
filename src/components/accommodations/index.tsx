@@ -41,6 +41,11 @@ const Accommodations = () => {
           />
         </ExtraAccommodations>
       </Accommodation>
+      <Accommodation>
+        <AccommodationTitle>Babysitters</AccommodationTitle>
+        <AccommodationDetails>If you will be needing babysitters during your stay in Santa Fe, here is more information on a recommended agency:</AccommodationDetails>
+        <a href="https://mailchi.mp/6e2728a22082/patty-cake-nannies-3-step-babysitting-placement-process-2706665?e=4ee2b5df5a">Brochure</a>
+      </Accommodation>
       <Map />
     </div>
   );

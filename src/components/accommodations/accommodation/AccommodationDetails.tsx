@@ -1,11 +1,7 @@
-import React, { ReactChild } from 'react';
+import React from 'react';
 import styles from './Accommodation.module.css';
 
-interface AccommodationDetailsProps {
-  children: (string | ReactChild)[]
-}
-
-const AccommodationDetails = ({ children }: AccommodationDetailsProps) => {
+const AccommodationDetails : React.StatelessComponent= ({ children }) => {
   return (
     <div className={styles.AccommodationDetails}>
       {children}
