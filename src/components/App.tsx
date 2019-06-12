@@ -10,6 +10,7 @@ import Directions from './directions';
 import Registry from './registry';
 import Activities from './activities';
 import Photos from './photos';
+import Events from './events';
 
 class App extends Component {
   render() {
@@ -19,10 +20,11 @@ class App extends Component {
           <Nav />
           <Container>
             <Route exact path="/" component={Home} />
+            <Route path="/activities" component={Activities} />
+            <Route path="/events" component={Events} />
             <Route path="/accommodations" component={Accommodations} />
             <Route path="/directions" component={Directions} />
             <Route path="/registry" component={Registry} />
-            <Route path="/activities" component={Activities} />
             <Route path="/photos" component={Photos} />
           </Container>
         </div>
