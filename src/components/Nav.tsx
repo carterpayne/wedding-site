@@ -10,9 +10,10 @@ import { ZOLA_LINK, WILLIAMS_SONOMA_LINK } from '../constants/registry';
 
 const navItems = [
   { label: 'Home', link: '/', exact: true },
+  { label: 'Local Activities', link: '/activities' },
+  { label: 'Events', link: '/events' },
   { label: 'Accommodations', link: '/accommodations' },
   { label: 'Directions', link: '/directions' },
-  { label: 'Local Activities', link: '/activities' },
   { label: 'Registry', link: '/registry', subnav: [
     { label: 'Zola', link: ZOLA_LINK },
     { label: 'Williams Sonoma', link: WILLIAMS_SONOMA_LINK },
