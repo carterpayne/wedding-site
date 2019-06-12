@@ -8,7 +8,7 @@ const Events = () => {
   return (
     <div>
       <PageTitle>Weekend Events</PageTitle>
-      <Section title="Friday, June 21st">
+      <Section title="Friday, June 21">
         <div>
           <div>
             <Text size="smedium">7 pm | Rehersal Dinner @ Rio Chama</Text>
@@ -21,7 +21,7 @@ const Events = () => {
           </div>
         </div>
       </Section>
-      <Section title="Saturday, June 22nd">
+      <Section title="Saturday, June 22">
         <div>
           <div>
             <Text size="smedium">9 am | Santa Fe Farmer's Market</Text>
@@ -45,7 +45,7 @@ const Events = () => {
           </div>
         </div>
       </Section>
-      <Section title="Sunday, June 23rd">
+      <Section title="Sunday, June 23">
         <div>
           <div>
             <Text size="smedium">9 - 10:30 am | Farewell Brunch @ La Fonda on the Plaza</Text>
